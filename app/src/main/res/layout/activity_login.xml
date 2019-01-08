@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".UserLoginRegister.LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/applogo" />
+
+    <EditText
+        android:id="@+id/login_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/inputs"
+        android:hint="@string/enter_mail"
+        android:inputType="textEmailAddress"
+        android:padding="6dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_mail"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/inputs"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+
+        android:padding="6dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="36sp" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/login_remember_me"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:checked="false"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:text="@string/remember_me"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/login_forget_password"
+        android:text="@string/forget_password"
+        android:layout_below="@id/login_password"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="loginButtonClicked"
+        android:id="@+id/login_register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/inputs"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Ticaret</string>
+    <string name="login">Login</string>
+    <string name="register">Do not have an account yet. Sign up now!</string>
+    <string name="create_account">Create an Account</string>
+    <string name="enter_mail">Your e-mail address</string>
+    <string name="enter_password">Password</string>
+    <string name="enter_name">Name</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">Forget your password?</string>
+    <string name="fill_up">Please fill up the fields</string>
+    <string name="phone_already_exist">This phone number already exist!</string>
+    <string name="general_error_message">Something went wrong. Please try it again!</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="home">Home</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="cart">Cart</string>
+    <string name="orders">Orders</string>
+    <string name="categories">Categories</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="user_name">User Name</string>
+</resources>
